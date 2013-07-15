@@ -8,8 +8,8 @@ app.get('/', function(request, response) {
       if (err) {
 	  throw err;
       }
-  content = data;
-  response.send(data.toString());
+  content = data.toString("utf8", 0, data.length);
+  response.send(content);
 });
 });
 
