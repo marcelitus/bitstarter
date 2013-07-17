@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 	  throw err;
       }
   //content = data.toString("utf8", 0, data.length);
-  response.send(data);
+//  response.send(data);
 });
 });
 
